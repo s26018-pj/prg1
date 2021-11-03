@@ -3,9 +3,9 @@
 
 auto main(int argc, char* argv[]) -> int
 {
-  (void)argc;
-  auto const a = std::stoi(argv[1]);
-  auto const b = std::stoi(argv[2]);
-  std::cout << (a + b) << "\n";
-  return 0;
+	(void)argc; // Aby kompilator nie wyrzucil bledu o nieuzywanej zmiennej argc
+	auto const a = std::stoi(argv[1]);
+	auto const b = std::stoi(argv[2]);
+ 	std::cout << (a + b) << "\n";
+	return 0;
 }
